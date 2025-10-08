@@ -1,4 +1,4 @@
-# Cline - Markdown Semantic Search
+# Gemini - Markdown Semantic Search
 
 This project is designed to read all markdown files from a specified folder, process their content, and build a local vector database. This database enables powerful semantic search capabilities, allowing users to find relevant information based on the meaning and context of their queries, rather than just keyword matching.
 
@@ -52,4 +52,3 @@ When you're done working on the project, you can deactivate the virtual environm
 
 ```bash
 deactivate
-```
