@@ -1,0 +1,8 @@
+- [x] Create core Python scripts (`index.py`, `search.py`)
+- [x] Create `requirements.txt`
+- [x] Create `docs` folder with a sample markdown file
+- [ ] Create a Python virtual environment
+- [ ] Install dependencies within the virtual environment
+- [ ] Create `.gitignore` file
+- [ ] Index the sample documents
+- [ ] Run a test search
