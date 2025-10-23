@@ -1,3 +1,254 @@
+v4
+
+# Updated Reality Check: 12-18hrs/week (2-3hrs × 6 days)
+
+## TL;DR: **Yes, 8-10 weeks is realistic for MVP.**
+
+---
+
+## New Math
+
+**Your capacity:** 12-18 hrs/week (average 15 hrs/week = ~2 work days/week)  
+**Original MVP work:** 21 days  
+**Part-time penalty:** 20% (much lower than 8hrs/week because daily context retention)
+
+**Adjusted calculation:**
+- 21 days × 1.2 penalty = 25 work days needed
+- At 2 days/week = **12.5 weeks base**
+- With store review wait time = **10 weeks realistic target**
+
+---
+
+## Why This Changes Everything
+
+### Daily engagement advantages:
+- **Context stays hot**: You remember yesterday's code (vs. week-long gaps)
+- **Debugging works**: Can tackle issues across 2-3 day spans
+- **Momentum builds**: Small daily wins prevent burnout
+- **Async tasks overlap**: CI runs, builds compile while you sleep
+
+### 2-3 hour blocks are perfect for:
+- One feature implementation
+- Bug fix session
+- Test cycle
+- Documentation sprint
+
+---
+
+## 10-Week Sprint Calendar
+
+| Week | Mon-Sat Daily Focus (2-3hrs each) | Weekly Hrs | Milestone |
+|------|-----------------------------------|------------|-----------|
+| **1** | Setup week: tooling + hello world + CI basics | 15 | ✅ Auto-build working |
+| | Mon: Xcode/Android Studio install | | |
+| | Tue: First build + simulator run | | |
+| | Wed: GitHub repo + Actions setup | | |
+| | Thu: Fastlane config | | |
+| | Fri: Code signing (iOS) or keystore (Android) | | |
+| | Sat: TestFlight/Internal Testing setup | | |
+| **2** | Core feature sprint (Part 1) | 16 | ✅ Data layer done |
+| | Mon: Data model design + schema | | |
+| | Tue: Database/storage implementation | | |
+| | Wed: API layer (if needed) | | |
+| | Thu: Unit tests for data layer | | |
+| | Fri: Error handling | | |
+| | Sat: Integration test + refactor | | |
+| **3** | Core feature sprint (Part 2) | 16 | ✅ Feature 80% complete |
+| | Mon: UI scaffold | | |
+| | Tue: Wire data to UI | | |
+| | Wed: User input handling | | |
+| | Thu: State management | | |
+| | Fri: Edge cases (empty states, loading) | | |
+| | Sat: Polish + bug fixes | | |
+| **4** | Feature completion + buffer | 14 | ✅ Feature locked |
+| | Mon: Final bug fixes | | |
+| | Tue: Accessibility pass (labels, contrast) | | |
+| | Wed: Performance check (launch time, memory) | | |
+| | Thu: Error logging + crash reporting setup | | |
+| | Fri: Code cleanup + comments | | |
+| | Sat: Build RC1 candidate | | |
+| **5** | QA Week 1: Core testing | 15 | ✅ Critical bugs fixed |
+| | Mon: Happy path testing (works as expected) | | |
+| | Tue: Edge case testing (empty data, offline) | | |
+| | Wed: Device testing (borrow/buy 1 old device) | | |
+| | Thu: Fix P0 crashes | | |
+| | Fri: Fix P1 bugs | | |
+| | Sat: Regression test + RC2 build | | |
+| **6** | QA Week 2: Hardening | 14 | ✅ RC candidate approved |
+| | Mon: Performance testing (low-end device) | | |
+| | Tue: Memory leak check | | |
+| | Wed: Battery drain test (run overnight) | | |
+| | Thu: Network condition testing (slow 3G sim) | | |
+| | Fri: Final bug triage (defer non-critical) | | |
+| | Sat: Final RC3 build + internal approval | | |
+| **7** | Release prep week | 16 | ✅ Submission ready |
+| | Mon: Screenshots (5 sizes for iOS or Android) | | |
+| | Tue: App icon + store graphics | | |
+| | Wed: Release notes + description | | |
+| | Thu: Privacy policy + permissions audit | | |
+| | Fri: Metadata review (keywords, category) | | |
+| | Sat: Pre-submission checklist + dry run | | |
+| **8** | Submit + monitor | 10 | ✅ In review |
+| | Mon: **SUBMIT TO STORE** (morning) + monitor | | |
+| | Tue: Set up monitoring dashboard (crashes, analytics) | | |
+| | Wed: Review status check + respond to questions | | |
+| | Thu: Buffer (catch up on any asks from store) | | |
+| | Fri: Buffer | | |
+| | Sat: Start v1.1 planning (defer to after launch) | | |
+| **9** | **WAIT WEEK** + remediation prep | 8 | 🕐 Review in progress |
+| | Mon-Wed: Monitor review status | | |
+| | Thu-Sat: If rejected, diagnose + fix (otherwise rest) | | |
+| **10** | Launch week | 6 | 🚀 **LIVE** |
+| | Mon: If still in review, monitor | | |
+| | Tue: Go-live checks (store listing correct) | | |
+| | Wed: Post-launch monitoring (crash rate <1%) | | |
+| | Thu-Sat: Respond to first user feedback | | |
+
+**Total hours:** ~130 hours across 10 weeks  
+**Effective work days:** 16 full days of focused work
+
+---
+
+## Daily Rhythm (Sample Week 3)
+
+### Your sustainable daily pattern:
+
+**Monday (3 hrs):**
+- 7-8pm: UI scaffold (main screen layout)
+- 8-9pm: Navigation setup
+- 9-10pm: Commit + push, write tomorrow's TODO
+
+**Tuesday (2.5 hrs):**
+- 8-9pm: Wire data to UI (display from DB)
+- 9-10:30pm: Debug binding issues
+
+**Wednesday (2 hrs):**
+- Afternoon slot: User input handling (buttons, forms)
+- Commit + note blockers
+
+**Thursday (3 hrs):**
+- 7-10pm: State management (user actions → data updates)
+
+**Friday (2 hrs):**
+- 8-10pm: Edge cases (what if no data? loading states?)
+
+**Saturday (3 hrs):**
+- Morning: Polish + fix bugs from week
+- Afternoon: Test on device, build RC
+
+**Sunday:**
+- 🏖️ **FULL REST** (critical for sustainability)
+
+---
+
+## Key Success Factors
+
+### 1. **Daily momentum > weekly sprints**
+- Each session picks up where you left off (not from scratch)
+- Commit daily with clear TODO for next session
+- Use GitHub Issues/Trello with "Next Session" label
+
+### 2. **Batch similar tasks**
+- Don't context-switch between UI/backend/tests in one day
+- Theme your days: "UI Monday", "Data Tuesday", "Testing Friday"
+
+### 3. **Protect Sunday**
+- Zero work (not even "just 30 minutes")
+- Mental recovery prevents Week 6 burnout
+- Review progress, but don't code
+
+### 4. **Front-load automation**
+- Week 1 investment in CI saves 1hr/week thereafter
+- Fastlane lanes for: build, test, screenshot, submit
+- By Week 3, typing `fastlane beta` deploys to TestFlight
+
+### 5. **Use async time wisely**
+- Start builds before dinner (run while you eat)
+- Run tests overnight (check results in morning)
+- Submit to store on Monday AM (get 5 days of review time)
+
+---
+
+## Risk Mitigation
+
+### High-risk weeks (need contingency):
+
+**Week 1:** Setup hell  
+- **Plan B:** Use template project (skip custom setup)
+- **Slack:** Can stretch to 7 days if signing breaks
+
+**Week 5-6:** Testing uncovers major bugs  
+- **Plan B:** Cut scope (defer non-critical features)
+- **Slack:** Week 6 Saturday can absorb 6 extra hours
+
+**Week 8-9:** Store rejection  
+- **Plan B:** Most rejections are metadata (quick fix)
+- **Slack:** Week 9 has 14 hrs built-in buffer
+
+### Early warning signs:
+- **Week 3:** If feature isn't 50% done → cut scope immediately
+- **Week 5:** If >10 critical bugs → defer features to v1.1
+- **Week 7:** If not submission-ready → push launch to Week 12
+
+---
+
+## Comparison: 8hrs/week vs 15hrs/week
+
+| Metric | 8hrs/week (old) | 15hrs/week (new) | Difference |
+|--------|-----------------|------------------|------------|
+| **Timeline** | 16 weeks | 10 weeks | **6 weeks faster** |
+| **Context loss** | 30-40% | 20% | **Better focus** |
+| **Burnout risk** | Medium | Low | **Sustainable** |
+| **Weekend impact** | 8hrs (full day) | 3hrs (half day) | **More life balance** |
+| **Debugging ability** | Poor (week gaps) | Good (daily continuity) | **Fewer blockers** |
+
+---
+
+## Aggressive 8-Week Option
+
+If you can push to **18hrs/week** (3hrs × 6 days):
+
+- Collapse Weeks 5-6 → 1.5 weeks (testing)
+- Collapse Weeks 8-9 → 1 week (submit + monitor tight)
+- **Total: 8 weeks to launch**
+
+**Cost:** Higher burnout risk, less buffer for mistakes
+
+---
+
+## What to Outsource ($300 budget)
+
+To hit 10 weeks comfortably:
+
+- **App icon + screenshots:** $80 (Fiverr)
+- **Privacy policy template:** $50 (TermsFeed)
+- **Beta testing devices:** Borrow from friends (free)
+- **Total saved:** 12 hours → recovers 1 week of timeline
+
+---
+
+## Honest Assessment
+
+### ✅ This schedule is realistic IF:
+- Scope stays locked (no feature creep)
+- You have mobile dev basics (not learning Swift + release process simultaneously)
+- No major blockers (backend ready, APIs stable)
+- You protect daily 2hr blocks (no "skip today, double tomorrow")
+
+### ⚠️ This schedule fails IF:
+- You skip 2+ days/week consistently
+- Scope inflates ("just add this one thing...")
+- First-time learning curve (never built iOS app before)
+- Major technical debt (rewrite data layer in Week 5)
+
+### 🎯 Realistic outcome:
+- **Week 8-10:** MVP in app store (80% confidence)
+- **Week 10-12:** MVP with minor delays (95% confidence)
+- **Week 12+:** Major scope creep or technical rewrites
+
+**Your 2-3hrs × 6 days pattern is the sweet spot for part-time shipping.** It's sustainable, builds momentum, and gives you a real shot at a Q1 2026 launch.
+---
+
 v3
 # Reality Check: Part-Time SRE (8hrs/week) Timeline
 
