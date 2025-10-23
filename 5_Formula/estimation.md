@@ -1,3 +1,167 @@
+v3
+# Reality Check: Part-Time SRE (8hrs/week) Timeline
+
+## TL;DR: **No, not in 5 weeks. You need 12-16 weeks minimum.**
+
+---
+
+## Math Check
+
+**Original estimate:** 34 total-days of work  
+**Your capacity:** 8 hours/week = 1 day/week  
+**Naive calculation:** 34 weeks (8 months) 😬
+
+**But context-switching kills you:**
+- Part-time work has 30-40% efficiency penalty (reloading context, fragmented focus)
+- Mobile dev requires 2-4 hour blocks (can't debug Xcode signing in 30min chunks)
+
+**Adjusted:** ~16 weeks for aggressive MVP
+
+---
+
+## MVP Scope (Cut 60% of original plan)
+
+### Keep (must-have for v1.0):
+- **One** core feature (pick: persistence OR performance, not both)
+- Basic UI (functional, not polished)
+- Crash reporting
+- Single platform (iOS OR Android, not both)
+
+### Cut (defer to v1.1+):
+- Cross-platform parity
+- Performance optimization
+- Polish/animations
+- Advanced analytics
+- Localization
+
+### MVP Formula:
+```
+DevDays = 4 (one feature + basic scaffold)
+QA_Days = 3 (manual testing only)
+StoreReview_Days = 7
+ReleasePrep_Days = 2
+Buffer_Days = 2
+Contingency_Days = 3
+
+Total = 21 days of work
+At 1 day/week = 21 weeks base
+With 30% part-time penalty = 27 weeks
+Realistic target = 16 weeks (if you batch efficiently)
+```
+
+---
+
+## 16-Week Calendar (8hrs/week blocks)
+
+| Week | Focus Block (8hrs) | Cumulative Hrs | Milestone |
+|------|-------------------|----------------|-----------|
+| **1** | Setup: Xcode/Android Studio + Hello World | 8 | Dev env ready |
+| **2** | CI pipeline: GitHub Actions + Fastlane | 16 | Auto-build working |
+| **3** | Core feature: Day 1 (scaffold + data model) | 24 | DB schema defined |
+| **4** | Core feature: Day 2 (business logic) | 32 | Feature 60% done |
+| **5** | Core feature: Day 3 (UI integration) | 40 | Feature complete |
+| **6** | Core feature: Day 4 (edge cases + error handling) | 48 | Feature hardened |
+| **7** | Testing: Manual QA + fix critical bugs | 56 | TestFlight build |
+| **8** | Testing: Device testing (borrow 3 devices) | 64 | Crash-free |
+| **9** | Testing: Regression + performance smoke test | 72 | RC candidate |
+| **10** | Release prep: Screenshots + metadata | 80 | Assets ready |
+| **11** | Release prep: Privacy policy + permissions audit | 88 | Compliance done |
+| **12** | Submit to store (2hrs) + buffer (6hrs for fixes) | 96 | In review |
+| **13** | **WAIT WEEK** (monitor, fix rejections if any) | 96 | - |
+| **14** | Remediation week (if rejected, fix + resubmit) | 104 | - |
+| **15** | **WAIT WEEK** (second review cycle) | 104 | - |
+| **16** | Go-live + monitoring setup | 112 | 🚀 **V1.0 LIVE** |
+
+**Total time investment:** 112 hours (14 full days of work spread over 4 months)
+
+---
+
+## Extra Work Required (Beyond 8hrs/week)
+
+### Mandatory surge weeks (need 12-16hrs):
+- **Week 1**: Setup requires uninterrupted 4hr blocks (Xcode is painful)
+- **Week 12**: Store submission has tight deadlines once you start
+- **Week 14** (if rejected): Apple's response time is unpredictable
+
+### Optional acceleration (to hit 12 weeks instead of 16):
+- Double up weeks 3-6 (16hrs/week during dev sprint)
+- This cuts 4 weeks off timeline but risks burnout
+
+---
+
+## Strategies to Actually Hit This Timeline
+
+### 1. Batch your 8 hours intelligently
+**Bad:** 1hr per day × 8 days  
+**Good:** 4hrs Saturday + 4hrs Sunday (context stays loaded)
+
+### 2. Weaponize your SRE skills
+- **Week 1-2**: Automate everything (CI, signing, TestFlight uploads)
+- Build scripts for repetitive tasks (screenshot generation, release notes)
+- Future you will thank past you
+
+### 3. Use AI coding assistants aggressively
+- GitHub Copilot / Cursor for boilerplate
+- Claude for debugging gnarly Xcode errors
+- Can recover 20-30% of lost efficiency
+
+### 4. Cut scope ruthlessly mid-flight
+**Decision points:**
+- Week 6: If feature isn't done, cut sub-features
+- Week 9: If bugs remain, classify as "known issues"
+- Week 12: If metadata isn't perfect, ship ugly (you can update later)
+
+### 5. Outsource your weak spots ($200-500)
+- Fiverr: App icon + screenshots ($50)
+- Upwork: Privacy policy template ($100)
+- Saves 8-16 hours of toil
+
+---
+
+## Risk Factors (Things That Will Blow Your Timeline)
+
+### High probability (90% chance):
+- **Xcode signing hell**: Budget 4 extra hours (Week 1)
+- **App Store rejection #1**: Privacy permissions, test account issues (Week 13-14)
+
+### Medium probability (40% chance):
+- **Scope creep**: "Just one more feature..." (Every week)
+- **Device-specific bugs**: Works on your iPhone, crashes on Android 11 (Week 8)
+
+### Low probability (10% chance, but catastrophic):
+- **Apple policy change**: Metadata rules shift mid-submission
+- **Backend dependency**: If your app needs an API you don't control
+
+---
+
+## Absolute Minimum MVP (If You Need 8 Weeks)
+
+Cut even more:
+- **No custom features**: Use a template (SwiftUI tutorial app)
+- **Pre-built backend**: Firebase/Supabase (no custom API)
+- **Single screen app**: Literally one view
+
+**Timeline:**
+- Weeks 1-2: Setup + integrate template
+- Weeks 3-4: Customize branding + basic config
+- Weeks 5-6: Test + fix
+- Weeks 7-8: Submit + monitor
+
+This gets something live, but it won't be impressive.
+
+---
+
+## Honest Recommendation
+
+**If this is:**
+- **Side project / learning**: 16-week MVP is doable and educational
+- **Startup / resume builder**: Hire a contractor for $3-5k, manage the project instead
+- **Production app with users**: Don't do this part-time; users deserve better
+
+**Your SRE skills are valuable** for the operational parts (CI, monitoring, release management), but 8hrs/week isn't enough to learn mobile dev AND ship quality software. 
+
+**Alternative:** Partner with a mobile dev (50/50 equity split), you handle DevOps/backend, they handle UI. Ship in 8 weeks combined effort.
+---
 V2
 
 # Reality Check: SRE → Mobile Release Owner
