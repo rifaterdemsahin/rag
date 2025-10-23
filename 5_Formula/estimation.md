@@ -1,3 +1,290 @@
+v5
+
+# 🚀 MVP Launch Calendar: Oct 23, 2025 → Jan 5, 2026
+
+**Start Date:** Thursday, October 23, 2025  
+**Target Launch:** Monday, January 5, 2026  
+**Total Duration:** 10 weeks, 3 days (74 days)
+
+---
+
+## Week 1: Setup & Foundation
+**Oct 23 - Oct 29, 2025**
+
+| Date | Day | Hours | Tasks | Deliverable |
+|------|-----|-------|-------|-------------|
+| **Oct 23** | Thu | 3h | Install Xcode/Android Studio, create new project, first simulator run | Project boots locally |
+| **Oct 24** | Fri | 2.5h | GitHub repo setup, .gitignore, README, project structure | Code in version control |
+| **Oct 25** | Sat | 3h | GitHub Actions workflow (build + test), troubleshoot failures | CI builds green |
+| **Oct 27** | Mon | 2h | Fastlane setup (lanes: build, test), initial config | Fastlane builds work |
+| **Oct 28** | Tue | 3h | iOS: Code signing + provisioning OR Android: Keystore setup | Signing working |
+| **Oct 29** | Wed | 2.5h | TestFlight/Internal Testing setup, first beta upload | ✅ **Auto-build to beta** |
+
+**Weekly Total:** 16 hours  
+**Milestone:** Beta distribution pipeline functional
+
+---
+
+## Week 2: Core Feature - Data Layer
+**Oct 30 - Nov 5, 2025**
+
+| Date | Day | Hours | Tasks | Deliverable |
+|------|-----|-------|-------|-------------|
+| **Oct 30** | Thu | 3h | Design data model, define entities/tables, schema diagram | Data model documented |
+| **Oct 31** | Fri | 2.5h | Implement database (SQLite/Room/CoreData), basic CRUD | DB layer working |
+| **Nov 1** | Sat | 3h | API layer (if needed), network service setup, error handling | API integration done |
+| **Nov 3** | Mon | 2.5h | Unit tests for data layer (create, read, update, delete) | Tests passing |
+| **Nov 4** | Tue | 2.5h | Error handling, retry logic, offline support | Data layer hardened |
+| **Nov 5** | Wed | 3h | Integration tests, refactor, code review | ✅ **Data layer complete** |
+
+**Weekly Total:** 16.5 hours  
+**Milestone:** Persistence layer tested & stable
+
+---
+
+## Week 3: Core Feature - UI Integration
+**Nov 6 - Nov 12, 2025**
+
+| Date | Day | Hours | Tasks | Deliverable |
+|------|-----|-------|-------|-------------|
+| **Nov 6** | Thu | 3h | UI scaffold (main screens), navigation structure | Screens navigable |
+| **Nov 7** | Fri | 2.5h | Wire data to UI (display from database) | Data renders on screen |
+| **Nov 8** | Sat | 3h | User input handling (forms, buttons, gestures) | User can input data |
+| **Nov 10** | Mon | 2.5h | State management (update UI on data changes) | Live data updates |
+| **Nov 11** | Tue | 2.5h | Edge cases (empty states, loading indicators) | Edge cases handled |
+| **Nov 12** | Wed | 3h | Polish, bug fixes, commit stable build | ✅ **Feature 80% done** |
+
+**Weekly Total:** 16.5 hours  
+**Milestone:** Core feature UI functional
+
+---
+
+## Week 4: Feature Completion & Hardening
+**Nov 13 - Nov 19, 2025**
+
+| Date | Day | Hours | Tasks | Deliverable |
+|------|-----|-------|-------|-------------|
+| **Nov 13** | Thu | 2.5h | Final bug fixes from Week 3 testing | Critical bugs resolved |
+| **Nov 14** | Fri | 2h | Accessibility pass (labels, contrast, VoiceOver) | Accessible UI |
+| **Nov 15** | Sat | 3h | Performance check (launch time, memory usage, scrolling) | Performance acceptable |
+| **Nov 17** | Mon | 2.5h | Crash reporting setup (Firebase Crashlytics/Sentry) | Crash tracking live |
+| **Nov 18** | Tue | 2h | Analytics events (screen views, key actions) | Analytics integrated |
+| **Nov 19** | Wed | 2.5h | Code cleanup, documentation, build RC1 | ✅ **Feature locked** |
+
+**Weekly Total:** 14.5 hours  
+**Milestone:** Release Candidate 1 ready for QA
+
+---
+
+## Week 5: QA Sprint - Core Testing
+**Nov 20 - Nov 26, 2025**
+
+| Date | Day | Hours | Tasks | Deliverable |
+|------|-----|-------|-------|-------------|
+| **Nov 20** | Thu | 3h | Happy path testing (all primary flows work) | Core flows validated |
+| **Nov 21** | Fri | 2.5h | Edge case testing (no data, offline, bad input) | Edge cases pass |
+| **Nov 22** | Sat | 3h | Device testing (old device, different OS versions) | Multi-device tested |
+| **Nov 24** | Mon | 2.5h | Fix P0 crashes (app-breaking bugs) | Critical bugs fixed |
+| **Nov 25** | Tue | 2h | Fix P1 bugs (major UX issues) | Major bugs fixed |
+| **Nov 26** | Wed | 3h | Regression testing, build RC2 | ✅ **RC2 stable** |
+
+**Weekly Total:** 16 hours  
+**Milestone:** Critical bugs eliminated
+
+---
+
+## Week 6: QA Sprint - Hardening
+**Nov 27 - Dec 3, 2025**
+
+| Date | Day | Hours | Tasks | Deliverable |
+|------|-----|-------|-------|-------------|
+| **Nov 27** | Thu | 2.5h | Performance testing on low-end device | Performance benchmarked |
+| **Nov 28** | Fri | 2h | Memory leak detection, profiling | No memory leaks |
+| **Nov 29** | Sat | 3h | Battery drain test (overnight run) | Battery usage acceptable |
+| **Dec 1** | Mon | 2.5h | Network testing (slow 3G, airplane mode) | Network handling robust |
+| **Dec 2** | Tue | 2h | Final bug triage (defer P2/P3 to v1.1) | Bug backlog prioritized |
+| **Dec 3** | Wed | 2.5h | Final regression, internal approval, RC3 build | ✅ **Final RC approved** |
+
+**Weekly Total:** 14.5 hours  
+**Milestone:** Production-ready candidate
+
+---
+
+## Week 7: Release Preparation
+**Dec 4 - Dec 10, 2025**
+
+| Date | Day | Hours | Tasks | Deliverable |
+|------|-----|-------|-------|-------------|
+| **Dec 4** | Thu | 3h | Screenshots (5 device sizes, localized if needed) | Screenshots ready |
+| **Dec 5** | Fri | 2.5h | App icon design/finalize, store graphics | Icons finalized |
+| **Dec 6** | Sat | 3h | Release notes, app description, keywords | Metadata written |
+| **Dec 8** | Mon | 3h | Privacy policy, permissions audit, compliance check | Legal docs ready |
+| **Dec 9** | Tue | 2h | Metadata review (category, age rating, pricing) | Metadata complete |
+| **Dec 10** | Wed | 2.5h | Pre-submission checklist, dry-run submission | ✅ **Submission ready** |
+
+**Weekly Total:** 16 hours  
+**Milestone:** All store assets prepared
+
+---
+
+## Week 8: Submission & Monitoring
+**Dec 11 - Dec 17, 2025**
+
+| Date | Day | Hours | Tasks | Deliverable |
+|------|-----|-------|-------|-------------|
+| **Dec 11** | Thu | 2h | 🚀 **SUBMIT TO APP STORE / PLAY STORE** (morning) | In review queue |
+| **Dec 12** | Fri | 2h | Set up monitoring dashboard (Crashlytics, Analytics) | Monitoring live |
+| **Dec 13** | Sat | 1.5h | Check review status, respond to any store questions | Status monitored |
+| **Dec 15** | Mon | 1.5h | Buffer: respond to reviewer requests if any | - |
+| **Dec 16** | Tue | 1h | Buffer: minor fixes if needed | - |
+| **Dec 17** | Wed | 1h | Buffer: continue monitoring | ✅ **Week 1 in review** |
+
+**Weekly Total:** 9 hours  
+**Milestone:** App submitted, monitoring active
+
+---
+
+## Week 9: Review Wait & Remediation
+**Dec 18 - Dec 24, 2025** *(Holiday week - adjusted schedule)*
+
+| Date | Day | Hours | Tasks | Deliverable |
+|------|-----|-------|-------|-------------|
+| **Dec 18** | Thu | 1h | Monitor review status | Status check |
+| **Dec 19** | Fri | 1h | Monitor review status | Status check |
+| **Dec 20** | Sat | 2h | If rejected: analyze feedback, plan fixes | Remediation plan |
+| **Dec 22** | Mon | 2h | If rejected: implement fixes | Fixes ready |
+| **Dec 23** | Tue | 2h | If rejected: resubmit to store | Resubmitted |
+| **Dec 24** | Wed | 0h | **Holiday - no work** | - |
+
+**Weekly Total:** 8 hours  
+**Milestone:** Remediation complete (if needed)
+
+---
+
+## Week 10: Launch Week
+**Dec 25, 2025 - Dec 31, 2025** *(Holiday week - light work)*
+
+| Date | Day | Hours | Tasks | Deliverable |
+|------|-----|-------|-------|-------------|
+| **Dec 25** | Thu | 0h | **Holiday - no work** | - |
+| **Dec 26** | Fri | 1h | Monitor review status | - |
+| **Dec 27** | Sat | 1h | Monitor review status | - |
+| **Dec 29** | Mon | 1.5h | If approved: verify store listing is correct | - |
+| **Dec 30** | Tue | 1.5h | Post-launch monitoring (crash rate <1%) | - |
+| **Dec 31** | Wed | 1h | Monitor user feedback | - |
+
+**Weekly Total:** 6 hours  
+**Milestone:** App likely approved
+
+---
+
+## Week 11: Go-Live Buffer
+**Jan 1 - Jan 5, 2026**
+
+| Date | Day | Hours | Tasks | Deliverable |
+|------|-----|-------|-------|-------------|
+| **Jan 1** | Thu | 0h | **Holiday - no work** | - |
+| **Jan 2** | Fri | 1.5h | Final monitoring, respond to reviews | - |
+| **Jan 3** | Sat | 1.5h | Hotfix deployment if critical bugs found | - |
+| **Jan 5** | Mon | 2h | Post-launch review, gather metrics | 🎉 **V1.0 LIVE** |
+
+**Weekly Total:** 5 hours  
+**Milestone:** Public launch complete
+
+---
+
+## 📊 Summary Stats
+
+| Metric | Value |
+|--------|-------|
+| **Start Date** | Thursday, October 23, 2025 |
+| **Submission Date** | Thursday, December 11, 2025 (7 weeks) |
+| **Expected Approval** | Dec 23-30, 2025 (2 week review) |
+| **Public Launch** | Monday, January 5, 2026 |
+| **Total Duration** | 10 weeks, 3 days (74 days) |
+| **Total Work Hours** | ~140 hours |
+| **Average Weekly Hours** | 14 hours |
+| **Work Days** | 60 days (Sun off) |
+| **Rest Days** | 14 Sundays + holidays |
+
+---
+
+## 🎯 Critical Dates to Block
+
+### Hard Deadlines:
+- **Oct 29:** Must have beta pipeline working (can't proceed without it)
+- **Nov 19:** Feature freeze (no new features after this)
+- **Dec 10:** Submission materials finalized (can't submit without)
+- **Dec 11:** SUBMIT (miss this, timeline shifts 1+ weeks)
+
+### High-Risk Windows:
+- **Oct 23-29:** Setup week (most likely to have 4hr emergency sessions)
+- **Dec 11:** Submission day (needs 3-4hr uninterrupted block)
+- **Dec 20-23:** Rejection remediation window (if needed)
+
+### Holiday Impact:
+- **Dec 24-26:** Christmas (stores slower, you're off)
+- **Jan 1:** New Year (minimal work)
+- **Store review note:** Apple/Google slower Dec 20-Jan 2 (built into timeline)
+
+---
+
+## 🚨 Early Warning Triggers
+
+**Week 3 Check (Nov 12):**
+- If feature <50% done → **Cut scope immediately** (defer 1 feature to v1.1)
+
+**Week 5 Check (Nov 26):**
+- If >10 P0 bugs remain → **Push launch to Jan 12** (add 1 week)
+
+**Week 7 Check (Dec 10):**
+- If submission not ready → **Emergency 6hr Saturday session** or push 1 week
+
+---
+
+## 💡 Daily Routine Template
+
+### Weekday (2-3hrs):
+```
+19:00-19:15  Review yesterday's notes, check CI status
+19:15-21:00  Focus work (see calendar task)
+21:00-21:15  Commit, push, write tomorrow's TODO
+```
+
+### Saturday (3hrs):
+```
+09:00-09:15  Week review, prioritize tasks
+09:15-12:00  Deep work (complex features)
+12:00-12:15  Build RC, deploy to TestFlight, plan next week
+```
+
+### Sunday:
+```
+OFF - Full rest, no code review, no "quick fixes"
+```
+
+---
+
+## 📱 Tools to Set Up Day 1
+
+1. **Calendar reminders:**
+   - Oct 29: "Beta pipeline must work"
+   - Nov 19: "Feature freeze - no new code"
+   - Dec 10: "Submission checklist due"
+   - Dec 11: "SUBMIT TO STORE"
+
+2. **Tracking:**
+   - GitHub Projects with this calendar as milestones
+   - Daily commit with "Day X/74" prefix
+
+3. **Accountability:**
+   - Share this calendar with a friend (weekly check-ins)
+
+---
+
+**Next action:** Start timer, install Xcode/Android Studio NOW. First commit by 10pm tonight. 🚀
+---
+
 v4
 
 # Updated Reality Check: 12-18hrs/week (2-3hrs × 6 days)
